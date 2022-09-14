@@ -5,7 +5,9 @@
 
 
 **Link menuju aplikasi Heroku**
+
 katalog: https://tugas2-pbp-taqiya.herokuapp.com/
+
 example_app: https://tugas2-pbp-taqiya.herokuapp.com/example_app
  
 **Bagan request client ke web aplikasi berbasis Django**
@@ -17,6 +19,7 @@ urls.py, views.py, models.py, dan berkas html memiliki kaitan sebagai komponen u
 Virtual environment merupakan sebuah alat untuk menciptakan environment yang terisolasi dari dependencies utama untuk menyimpan library hingga konfigurasi yang diinginkan. Hal ini sangat berguna ketika mengerjakan suatu proyek yang membutuhkan dependencies berbeda agar tercegah dari adanya error akibat perbedaaan versi hingga kompatibilitas. Selain itu, kita dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment dengan catatan, ketika sebuah aplikasi web melakukan penginstallan library maka akan disimpan secara global yang nantinya ketika akan ada update dari versi library yang digunakan maka aplikasi web tidak kompatibel karena tidak adanya virtual environmnent yang mengisolasi masing-masing modul.
 
 **Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di atas.**
+
 Pada poin pertama, saya mengimport render dari django.shortcuts untuk memproses data menjadi HTTPResponse dan mengimport CatalogItem dari katalog.models di views.py milik katalog. Untuk melakukan pengambilan data dari model, saya membuat fungsi show_katalog dengan parameter request pada views.py yang akan mereturn fungsi render(request, "katalog.html", context). katalog.html merupakan template httpresponse yang akan menampilkan output pada development server. context merupakan dictionaries yang terdiri dari keys seperti 'list_barang' dari models pada class CatalogItem,'nama', dan 'id'.
 
 Pada poin kedua, saya mengimport path dari django.urls dan show_katalog dari katalog.views di urls.py milik katalog. Selanjutnya, saya membuat variabel app_name = 'katalog' dan membuat routing melalui list url_patterns pada urls.py dengan menambahkan path('', show_katalog, name='show_katalog'), untuk memetakan fungsi show_katalog pada views.py. Akan tetapi, kita harus menambahkan path('', include('katalog.urls')), terlebih dahulu pada list url_patterns urls.py miliki project_django sebelum urls.py milik katalog dapat diakses.
