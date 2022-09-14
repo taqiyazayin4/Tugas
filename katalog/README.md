@@ -3,14 +3,14 @@
 ### Nama : Taqiya Zayin Hanafie
 ### NPM  : 2106751335
 
-**Link menuju aplikasi Heroku**
 
+**Link menuju aplikasi Heroku**
 katalog: https://tugas2-pbp-taqiya.herokuapp.com/
 example_app: https://tugas2-pbp-taqiya.herokuapp.com/example_app
  
 **Bagan request client ke web aplikasi berbasis Django**
 urls.py, views.py, models.py, dan berkas html memiliki kaitan sebagai komponen untuk memproses request client dan menghasilkan response. Berikut merupakan bagan request client ke web aplikasi berbasis Django sebagai berikut:
-![This is an image](https://github.com/taqiyazayin4/data/issues/1#issue-1373418172)
+![This is an image](https://github.com/taqiyazayin4/Tugas/blob/main/katalog/flow1.jpeg)
 
 **Jelaskan kenapa menggunakan virtual environment? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment?**
 
@@ -24,3 +24,9 @@ Pada poin kedua, saya mengimport path dari django.urls dan show_katalog dari kat
 Pada poin ketiga, saya menjalankan perintah python manage.py loaddata initial_wishlist_data.json untuk memasukkan data pada file ke dalam database Django lokal. File initial_wishlist_data.json berisi data yang dapat dipetakan ke dalam HTML dengan syntax menyesuaikan dengan file katalog.html. Data tersebut tersimpan dalam CatalogItem yang diakses oleh dictionaries context pada keys 'list_barang' yang selanjutnya diproses menjadi bentuk html melalui pemanggilan return render(request, "katalog.html", context).
 
 Pada poin keempat, saya melakukan add, commit, dan push perubahan yang telah saya lakukan dan disimpan ke dalam repository github saya. Saya membuat aplikasi pada heroku lalu menambahkan secret key berupa HEROKU_API_KEY dan HEROKU_APP_NAME. Selanjutnya, saya mengklik GitHub sebagai deployment method di heroku lalu menyambungkan repositori github saya ke heroku dan mendeploy secara otomatis sehingga aplikasi yang dibuat dapat dilihat. 
+
+Referensi:
+Django - Models. Retrieved 12 September 2022, from https://www.tutorialspoint.com/django/django_models.htm
+Django Models. Retrieved 12 September 2022, from https://www.w3schools.com/django/django_models.php
+Muhardian, A. (2017). Mengenal Virtualenv: Apa Saja yang Harus Kamu Ketahui?. Retrieved 12 September 2022, from https://www.petanikode.com/python-virtualenv/
+
