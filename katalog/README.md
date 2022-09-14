@@ -4,7 +4,9 @@
 ### NPM  : 2106751335
 
 **Link menuju aplikasi Heroku**
- https://tugas2-pbp-taqiya.herokuapp.com/
+
+katalog: https://tugas2-pbp-taqiya.herokuapp.com/
+example_app: https://tugas2-pbp-taqiya.herokuapp.com/example_app
  
 **Bagan request client ke web aplikasi berbasis Django**
 urls.py, views.py, models.py, dan berkas html memiliki kaitan sebagai komponen untuk memproses request client dan menghasilkan response. Berikut merupakan bagan request client ke web aplikasi berbasis Django sebagai berikut:
