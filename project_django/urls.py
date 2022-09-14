@@ -19,6 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('katalog.urls')),
+    path('example_app', include('example_app.urls')),
 ]
 
 # TODO: Implement Routings Here
