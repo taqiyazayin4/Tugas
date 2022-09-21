@@ -16,10 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('katalog.urls')),
     path('example_app', include('example_app.urls')),
+    path('mywatchlist/', include('mywatchlist.urls')),
+
+
 ]
 
 # TODO: Implement Routings Here

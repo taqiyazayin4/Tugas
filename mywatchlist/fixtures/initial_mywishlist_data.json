@@ -1,0 +1,114 @@
+[
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 1,
+        "fields": {
+            "title": "Siapa kamu?",
+            "review": "Good",
+            "watched": "Yes",
+            "rating": 4,
+            "release_date" : "2006-10-10"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 2,
+        "fields": {
+            "title": "Rangga",
+            "review": "Excellent",
+            "watched": "Yes",
+            "rating": 5,
+            "release_date" : "2011-10-10"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 3,
+        "fields": {
+            "title": "Hymne",
+            "review": "Bad",
+            "watched": "Yes",
+            "rating": 1,
+            "release_date" : "2022-03-10"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 4,
+        "fields": {
+            "title": "Si Maul",
+            "review": "Good",
+            "watched": "No",
+            "rating": 5,
+            "release_date" : "2011-01-10"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 5,
+        "fields": {
+            "title": "Dear John",
+            "review": "Excellent",
+            "watched": "No",
+            "rating": 5,
+            "release_date" : "2010-11-03"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 6,
+        "fields": {
+            "title": "Halo",
+            "review": "Good",
+            "watched": "Yes",
+            "rating": 3,
+            "release_date" : "2022-02-10"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 7,
+        "fields": {
+            "title": "Aku Lola",
+            "review": "Bad",
+            "watched": "Yes",
+            "rating": 2,
+            "release_date" : "2000-10-10"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 8,
+        "fields": {
+            "title": "Siapa kamu? 2",
+            "review": "Very Good",
+            "watched": "Yes",
+            "rating": 4,
+            "release_date" : "2008-10-10"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 9,
+        "fields": {
+            "title": "Siapa kamu? 3",
+            "review": "Good",
+            "watched": "No",
+            "rating": 3,
+            "release_date" : "2009-10-10"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 10,
+        "fields": {
+            "title": "Horror House",
+            "review": "Excellent",
+            "watched": "No",
+            "rating": 5,
+            "release_date" : "2021-05-10"
+        }
+    }
+    
+        
+]
