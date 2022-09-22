@@ -76,3 +76,6 @@ class Test(TestCase):
         response = Client.get('/mywatchlist/html/')
         self.assertEqual(response.status_code,200)
    
+Sumber referensi:
+https://www.geeksforgeeks.org/difference-between-json-and-xml/
+https://bsharptech.com.au/html-vs-json-whats-the-difference/#:~:text=HTML%20is%20a%20relatively%20simple,for%20data%20storage%20and%20transfer.
