@@ -54,7 +54,7 @@ f. Membuat routing dengan menambahkan path pada urls.py mywatchlist sebagai beri
   Maka dari itu, client dapat mengakses mywatchlist dengan format HTML, XML, dan JSON
 g. Saya melakukan add, commit, dan push perubahan yang telah saya lakukan dan disimpan ke dalam repository github saya. Selanjutnya, saya mengklik GitHub sebagai deployment method di heroku lalu menyambungkan repositori github saya ke heroku dan mendeploy secara otomatis sehingga aplikasi yang dibuat dapat dilihat. 
 4. Screenshot Postman
-![HTML](https://github.com/taqiyazayin4/Tugas/blob/main/mywatchlist/Screen%20Shot%202022-09-22%20at%2008.03.27.png)
+![HTML](https://github.com/taqiyazayin4/Tugas/blob/main/mywatchlist/Screen%20Shot%202022-09-22%20at%2010.42.59.png)
 ![JSON](https://github.com/taqiyazayin4/Tugas/blob/main/mywatchlist/Screen%20Shot%202022-09-22%20at%2008.03.34.png)
 ![XML](https://github.com/taqiyazayin4/Tugas/blob/main/mywatchlist/Screen%20Shot%202022-09-22%20at%2008.03.43.png)
 5. Menambahkan unit test pada tests.py sebagai berikut:
