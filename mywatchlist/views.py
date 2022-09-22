@@ -9,6 +9,7 @@ def show_html(request):
     return render(request, "mywatchlist.html", context)
 
 data_watchlist = MyWatchlistItem.objects.all()
+
 context = {
     'list_data': data_watchlist,
     'nama': 'Taqiya Zayin Hanafie',
