@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('katalog.urls')),
     path('example_app', include('example_app.urls')),
     path('mywatchlist/', include('mywatchlist.urls')),
+    path('todolist/', include('todolist.urls')),
 
 
 ]

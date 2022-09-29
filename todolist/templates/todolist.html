@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  <h2>Tugas 4 Assignment PBP/PBD</h2>
+
+  <h3>Username:  {{username}} </h3> 
+
+  <br/>
+    <table>
+      <tr>
+        <th>Tanggal Pembuatan</th>
+        <th>Judul</th>
+        <th>Deskripsi</th>
+        <th>Status</th>
+        <th>Ubah Status</th>
+        <th>Hapus</th>
+      </tr>
+      {% comment %} Add the data below this line {% endcomment %}
+      {% for task in tasks %}
+      <tr>
+        <td>{{task.date}}</td>
+        <td>{{task.title}}</td>
+        <td>{{task.description}}</td>
+        <td>
+          {% if item.is_finished %}
+          Selesai
+          {% else %}
+          Belum Selesai
+          {% endif%}
+        </td>
+        <td><button><a href="{% url 'todolist:update_status' task.id %}">Update Status</a></button></td>
+        <td><button><a href="{% url 'todolist:remove_task' task.id %}">Remove Task</a></button></td>
+      </tr>
+    {% endfor %}
+    </table>
+
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}  
+
+    <button><a href="{% url 'todolist:creating_new_task' %}">Tambah Task Baru</a></button>
+    <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+    
+  {% endblock content %}
