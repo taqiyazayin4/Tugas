@@ -110,7 +110,7 @@ urlpatterns = [
 8. Saya melakukan add, commit, dan push perubahan yang telah saya lakukan dan disimpan ke dalam repository github saya. Selanjutnya, saya mengklik GitHub sebagai deployment method di heroku lalu menyambungkan repositori github saya ke heroku dan mendeploy secara otomatis sehingga aplikasi yang dibuat dapat dilihat. 
 
 9. 
-![User A](https://github.com/taqiyazayin4/Tugas/blob/42f9ff1d45ab1eb4082cc0c93598f9d57fb2b972/todolist/Screen%20Shot%202022-09-29%20at%2009.13.06.png)
-![User B](https://github.com/taqiyazayin4/Tugas/blob/42f9ff1d45ab1eb4082cc0c93598f9d57fb2b972/todolist/Screen%20Shot%202022-09-29%20at%2009.15.45.png)
+![UserA](https://github.com/taqiyazayin4/Tugas/blob/42f9ff1d45ab1eb4082cc0c93598f9d57fb2b972/todolist/Screen%20Shot%202022-09-29%20at%2009.13.06.png)
+![UserB](https://github.com/taqiyazayin4/Tugas/blob/42f9ff1d45ab1eb4082cc0c93598f9d57fb2b972/todolist/Screen%20Shot%202022-09-29%20at%2009.15.45.png)
 
 
