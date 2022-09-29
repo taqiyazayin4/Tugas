@@ -1,7 +1,7 @@
 # Tugas 4 PBP 
 ## Nama : Taqiya Zayin Hanafie 
 ## NPM : 2106751335 
-### Link Aplikasi Heroku: https://tugas2-pbp-taqiya.herokuapp.com//todolist/
+### Link Aplikasi Heroku: https://tugas2-pbp-taqiya.herokuapp.com/todolist/
 
  #### Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?
 {% csrf_token %} adalah tag _random_ yang berfungsi untuk memproteksi Cross Site Request Forgery (CSRF) dari serangan. Setiap sesi pengguna. {% csrf_token %} memberikan token unik untuk proses request. Apabila terdapat request yang masuk, server akan mengecek kesesuaian token. Maka dari itu, jika token tidak sesuai/tidak ditemukan maka request tidak akan dijalankan. <br />
@@ -110,6 +110,7 @@ urlpatterns = [
 8. Saya melakukan add, commit, dan push perubahan yang telah saya lakukan dan disimpan ke dalam repository github saya. Selanjutnya, saya mengklik GitHub sebagai deployment method di heroku lalu menyambungkan repositori github saya ke heroku dan mendeploy secara otomatis sehingga aplikasi yang dibuat dapat dilihat. 
 
 9. 
-# ![User A]()
+![User A](https://github.com/taqiyazayin4/Tugas/blob/42f9ff1d45ab1eb4082cc0c93598f9d57fb2b972/todolist/Screen%20Shot%202022-09-29%20at%2009.13.06.png)
+![User B](https://github.com/taqiyazayin4/Tugas/blob/42f9ff1d45ab1eb4082cc0c93598f9d57fb2b972/todolist/Screen%20Shot%202022-09-29%20at%2009.15.45.png)
 
 
