@@ -5,7 +5,51 @@
 {% endblock meta %}
 
 {% block content %}
-
+<style>
+    *{
+        color: #1e0263;
+        text-align:center;
+        vertical-align: middle;
+        font-family: 'Roboto', sans-serif;
+    }
+    input {
+        text-align: left;
+        margin: 5px auto;
+        
+        padding: 10px;
+    }
+    h1 {
+      color:#cbcad7d7;
+    }
+    tr{
+        text-align:center;
+        vertical-align: middle;
+    }
+    p, a{
+        color:#f2f2f2d7;
+    }
+    form {
+    border-radius:0.5em; 
+    box-shadow: 0px 0px 7px rgba(65, 56, 56, 0.211);   
+    background-color: rgba(229, 227, 223, 0.211);   
+    margin: auto;
+    
+    width: 300px;
+    padding: 1em;
+    border-radius: 1em;
+  }
+    
+    body {
+      background-image: url("https://images.unsplash.com/photo-1663076121570-eb6e69bdde3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80");
+    }
+    
+    .login {
+      margin-top: 1em;
+      color:rgba(44, 38, 27, 0.966);
+      padding: 10%;
+     
+    }
+</style>
 <div class = "login">
 
     <h1>Login</h1>
@@ -39,7 +83,7 @@
     {% endif %}     
     
     <br/>
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
+    <p>Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a></p>
 
 </div>
 
