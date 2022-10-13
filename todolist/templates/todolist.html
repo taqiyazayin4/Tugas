@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block meta %}
  <title>Todolist</title>
  {% endblock meta %}
@@ -25,7 +25,7 @@
      body {
       justify-content: center;
       align-items: center;
-       background-image: url("https://images.unsplash.com/photo-1663076121570-eb6e69bdde3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80");
+      background-image: url("https://images.unsplash.com/photo-1663076121570-eb6e69bdde3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80");
      }
      
      .card {
@@ -88,7 +88,7 @@
     .buttonTask{
       border: 0px;
       
-        right:10%;
+        right:14%;
         bottom: 90%;
         background-color: #778cc0;
         padding: 5px;
@@ -117,7 +117,7 @@
     }
 
  </style>
-  <div class="container-fluid">
+  <div id="tasks" class="container-fluid">
     <div class="row row-cols-1 row-cols-md-3 g-4 md:justify-end gap-4">
       {% for task in tasks %}
         <div class="card col-sm-4 mb-1 mt-4 mx-auto" style="width: 40rem;">
@@ -155,7 +155,14 @@
     </ul>
     {% endif %}  
   <div class="header text-center mx-auto"></div>
-    <button  class= buttonTask ><a style= float:right href="{% url 'todolist:creating_new_task' %}">Tambah Task Baru</a></button>
+   
+    
+    <button  id="open-button" class= buttonTask ><a style= float:right href="{% url 'todolist:creating_new_task' %}">Add Task</a></button>
     <button class= buttonLogout><a  style= float:right href="{% url 'todolist:logout' %}">Logout</a></button>
   </div> 
+
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="{% static 'todolist.js' %}"></script>
   {% endblock content %}

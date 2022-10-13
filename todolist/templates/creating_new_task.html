@@ -46,11 +46,11 @@
         padding: 10%;
     }
 </style>
-<div class = "creating_new_task">
+<div id="creating-new-task-modal" class = "creating_new_task">
     
     <h1>New Task</h1>  
 
-    <form method="POST" >  
+    <form id="creating-new-task-form" method="POST" >  
         {% csrf_token %}  
         <table>  
             {{ form.as_table }}  
